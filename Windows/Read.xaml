@@ -1,0 +1,33 @@
+﻿<controls:MetroWindow x:Class="ETRU_TestBench.Windows.Read"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro" 
+        xmlns:local="clr-namespace:ETRU_TestBench.Windows"
+        mc:Ignorable="d"
+        Title="读数窗口" Height="650" Width="800"
+        Icon="C:\Work\ETRU\ETRU_TestBench\ETRU_TestBench\Icon\Bnn2.png">
+   
+    <Grid> 
+        <StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label Content="读数规则"  Margin="4" Padding="4"  ></Label>
+                <Button Content="查看规则" Margin="4" Padding="4" Click="Read_Click" Style="{StaticResource ButtonSplitStyle}"></Button>
+            </StackPanel>
+            <GroupBox Header="信息模块">
+                <WrapPanel>
+                    <Label Content="请输入读数:"></Label>
+                    <TextBox  BorderThickness="1" BorderBrush="Gray" Name="textRead" Height="90" Width="400" KeyDown="TextRead_KeyDown" Focusable="True" FontSize="40"></TextBox>
+                </WrapPanel>
+            </GroupBox>
+            <GroupBox Header="时间">
+                <WrapPanel> 
+                <Calendar Name="Calendar" Margin="10,10,10,10" DisplayMode="Month" DisplayModeChanged="Date_Click"></Calendar>
+                 <TextBlock x:Name="Time"  Margin="5,10"></TextBlock>
+                </WrapPanel> 
+            </GroupBox>
+        </StackPanel>
+    </Grid>
+</controls:MetroWindow>

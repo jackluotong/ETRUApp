@@ -1,0 +1,14 @@
+﻿<controls:MetroWindow x:Class="ETRU_TestBench.Windows.ReadRuleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"  
+        xmlns:local="clr-namespace:ETRU_TestBench.Windows"
+        mc:Ignorable="d"
+        Title="读数规则" Height="450" Width="800"
+        Loaded="Window_Loaded">
+    <Grid>
+        
+    </Grid>
+</controls:MetroWindow>
